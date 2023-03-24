@@ -22,7 +22,7 @@ You can also just build source code and then add module manually.
 ``` bash
 make build
 ```
-# What to do after build ?
+### What to do after build ?
 Make build command generates object and kernel object files. We need to insert our module to kernel.
 ``` bash 
 sudo insmod *.ko
