@@ -14,7 +14,7 @@ make clean
 ```
 
 ## Usage example
-Here is a simple reading made in python.
+Here is a simple reading example made in python.
 ``` python
 with open('/proc/pcf8591t') as f:
 	ain_value = ord(f.read(1))
