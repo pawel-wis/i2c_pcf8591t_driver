@@ -1,5 +1,5 @@
 # PCF8591T Driver
-This is a simple driver for PCF8591T AC/DC conventer. The usage of this device is minimalized to AIN1 for now. You can easly extend it for another pins but if you need only one analog you can use this module. After initialization the proc file is created in a /proc/pcf8591t location. The driver sends one byte response to i/o read function.
+This is a simple driver for PCF8591T AC/DC conventer. The usage of this device is minimalized to AIN1 for now. You can easly extend it for another pins but if you need only one analog you can use this module. After initialization the proc file is created in a /proc/pcf8591t location. The driver sends one byte response to I/O read function.
 
 Please notice that value returned from I2C request has unsigned char type (0-255). So console tools for printing a file like cat or tail can return weird symbols. Real number value can be revelead by functions like python's ord().
 
