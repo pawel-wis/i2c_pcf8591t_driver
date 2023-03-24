@@ -24,7 +24,7 @@ make build
 ```
 ### What to do after build ?
 Make build command generates object and kernel object files. We need to insert our module to kernel.
-``` bash 
+``` bash
 sudo insmod *.ko
 ```
 Then we can check that our module is attached. We should see our module name after command execution.
