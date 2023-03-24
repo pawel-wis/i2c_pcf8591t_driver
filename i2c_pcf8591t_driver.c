@@ -53,7 +53,7 @@ static struct proc_dir_entry *entry_file;
 static ssize_t proc_fs_read(struct file *file, char __user *user_buffer, size_t count, loff_t *offset) {
  	u8 output = get_value_from_pcf(pcf8591t_adapter);
 	ssize_t bytes_readed = simple_read_from_buffer(user_buffer, count, offset, &output, sizeof(output));
-    printk("[%s] Bytes readed: %d || Output value: %d\n", MODULE_NAME, bytes_readed, output);
+    printk("[%s] Bytes readed: %ld || Output value: %d\n", MODULE_NAME, bytes_readed, output);
 	return bytes_readed;
 }
 
