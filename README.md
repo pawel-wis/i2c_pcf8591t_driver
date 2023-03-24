@@ -17,7 +17,6 @@ make clean
 Here is a simple reading example made in python.
 ``` python
 with open('/proc/pcf8591t') as f:
-	ain_value = ord(f.read(1))
-	print(ain_value)
+    ain_value = ord(f.read(1))
+    print(ain_value)
 ```
-
