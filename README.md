@@ -47,9 +47,9 @@ make clean
 ```
 
 ## Usage example
-Here is a simple reading example made in python.
+Here is a simple reading example made in python3.
 ``` python
-with open('/proc/pcf8591t') as f:
-    ain_value = ord(f.read(1))
+with open('/proc/pcf8591t', 'rb') as f:
+    ain_value = int.from_bytes(read(1), 'big')
     print(ain_value)
 ```
