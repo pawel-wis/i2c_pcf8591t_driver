@@ -40,7 +40,6 @@ static u8 get_value_from_pcf(struct i2c_adapter *adap) {
   msgs[1].buf = &ret;
 
   i2c_transfer(adap, msgs, 2);
-  printk("[%s] Insinde read val: %d\n", MODULE_NAME, ret);
 
   return ret;
 }
