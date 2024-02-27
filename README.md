@@ -3,6 +3,8 @@ This is a simple driver for PCF8591T AC/DC conventer. The usage of this device i
 
 Please notice that value returned from I2C request has unsigned char type (0-255). So console tools for printing a file like cat or tail can return weird symbols. Real number value can be revelead by functions like python's ord().
 
+The module use Linux native components so cross compilation to others OSes are not supported.
+
 ## Installation
 It is possible to build and insert module to kernel runtime using make. This command has a insmod under the pillow so sudo is propably needed to execute.
 ``` bash
